@@ -1,0 +1,137 @@
+/* font */
+
+
+.roboto {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+}
+
+/* shared style */
+
+* a {
+    text-decoration: none;
+}
+
+.primary-btn {
+    font-size: 16px;
+    font-weight: 500px;
+    color: white;
+    width: 170px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 10px;
+    background-color: #85A019;
+}
+
+/* nav section */
+
+
+.header-nav {
+    margin: 39px 135px 0px 135px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-nav img {
+    width: 291.11px;
+    height: 39.27px;
+}
+
+.header-nav-lists {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 57px;
+}
+
+.header-nav-lists li {
+    list-style: none;
+}
+
+.header-nav-lists a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #3C3C3C;
+
+}
+
+/* banner */
+
+.header-banner {
+    margin: 0px 135px 66px 135px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 150px;
+    background-size: 450px;
+    background-image: url('../Logo\,\ Icon/Group 33091.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.header-banner img {
+    width: 349px;
+}
+
+.s1 {
+    color: #FABE4C;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.s2 {
+    color: #363958;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.header-banner-description {
+    font-size: 16px;
+    font-weight: 500;
+    color: #3E3E3E;
+    margin-top: 8px;
+    margin-bottom: 24px;
+}
+
+/* for less then 576px */
+
+@media screen and (max-width:576px) {
+
+    /* header nav section */
+    .header-nav {
+        display: grid;
+        margin: 20px 50px 0px 50px;
+    }
+
+    .header-nav-lists {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    /* header banner section */
+    .header-banner {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        background-size: 450px;
+        background-image: url('../Logo\,\ Icon/Group 33091.png');
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+}
